@@ -1,0 +1,19 @@
+[package]
+name = "cargo-get"
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE"
+
+[dependencies]
+
+serde = { version = "1.0.123", features = ["derive"] }
+toml_edit =  { version = "0.13.4", features = ["serde", "easy"] }
+cargo = { version = "0.59.0" }
+anyhow = "1.0"
+
+[[bin]]
+
+name = "cargo-get"
+test = false
+bench = false
+path = "src/bin/main.rs"
